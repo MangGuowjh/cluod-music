@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "d-playlist":"/components/playlist/playlist"
+  },
+  "navigationBarTitleText":"芒果音乐",
+  "enablePullDownRefresh": true
+}
