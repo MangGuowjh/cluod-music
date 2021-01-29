@@ -25,7 +25,6 @@ Page({
         $url: 'musiclist'
       }
     }).then((res) => {
-      console.log(res)
       console.log(res.result)
       const pl = res.result.playlist
       this.setData({
