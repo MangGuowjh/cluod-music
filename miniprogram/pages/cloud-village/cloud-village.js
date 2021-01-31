@@ -1,10 +1,11 @@
-// pages/find/find.js
+// pages/cloud-village/cloud-village.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+
   },
 
   /**

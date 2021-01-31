@@ -1,11 +1,13 @@
 {
   "pages": [
     "pages/music/music",
-    "pages/find/find",
     "pages/profile/profile",
     "pages/test/test",
     "pages/musiclist/musiclist",
-    "pages/player/player"
+    "pages/player/player",
+    "pages/podcast/podcast",
+    "pages/sing/sing",
+    "pages/cloud-village/cloud-village"
   ],
   "requiredBackgroundModes": [
     "audio"
@@ -23,21 +25,33 @@
     "list": [
       {
         "pagePath": "pages/music/music",
-        "text": "音乐",
-        "iconPath": "images/tab/music.png",
-        "selectedIconPath": "images/tab/music-actived.png"
-      },
-      {
-        "pagePath": "pages/find/find",
         "text": "发现",
         "iconPath": "images/tab/find.png",
         "selectedIconPath": "images/tab/find-actived.png"
+      },
+      {
+        "pagePath": "pages/podcast/podcast",
+        "text": "播客",
+        "iconPath": "images/tab/podcast.png",
+        "selectedIconPath": "images/tab/podcast-actived.png"
       },
       {
         "pagePath": "pages/profile/profile",
         "text": "我的",
         "iconPath": "images/tab/profile.png",
         "selectedIconPath": "images/tab/profile-actived.png"
+      },
+      {
+        "pagePath": "pages/sing/sing",
+        "text": "唱歌",
+        "iconPath": "images/tab/sing.png",
+        "selectedIconPath": "images/tab/sing-actived.png"
+      },
+      {
+        "pagePath": "pages/cloud-village/cloud-village",
+        "text": "云村",
+        "iconPath": "images/tab/cloud-village.png",
+        "selectedIconPath": "images/tab/cloud-village-actived.png"
       }
     ]
   },

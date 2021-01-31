@@ -5,14 +5,21 @@
 
 <view class="player-info">
 
-  <view class="player-disc">
-    <image class="player-img" src="{{picUrl}}"></image>
+  <view class="player-disc {{isPlaying?'playing':''}}">
+    <image class="player-img zhuan {{isPlaying?'':'ting'}}" src="{{picUrl}}"></image>
   </view>
 
+  <view class="bar">
+    <text class="currentTime">{{ currentTime }}</text>
+    <slider max="{{ progressBarMax }}" min="0" value="{{ progressBarValue }}" bindchanging="seeking" bindchange="seekTime" class="progress-bar"
+      block-color="#d43c43" backgroundColor="#000000" activeColor="#d43c43" block-size="12"></slider>
+    <text class="totalTime">{{ totalTime }}</text>
+  </view>
+  
   <view class="control">
-    <text class="iconfont icon-hanhan-01"></text>
-    <text class="iconfont icon-bofang"></text>
-    <text class="iconfont icon-hanhan-011"></text>
+    <text class="iconfont icon-hanhan-01" bind:tap="onPrev"></text>
+    <text class="iconfont {{isPlaying?'icon-zanting':'icon-bofang'}}" bind:tap="togglePlaying"></text>
+    <text class="iconfont icon-hanhan-011" bind:tap="onNext"></text>
   </view>
 
 </view>

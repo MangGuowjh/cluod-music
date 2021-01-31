@@ -1,0 +1,14 @@
+<!--pages/podcast/podcast.wxml-->
+<text>pages/podcast/podcast.wxml</text>
+<text class="player-info">
+<view class="control">
+    <text class="iconfont icon-rili" ></text>
+    <text class="iconfont icon-FM_weixuanze" ></text>
+    <text class="iconfont icon-gedan" ></text>
+    <text class="iconfont icon-PCbofangye_paihangbang"></text>
+    <text class="iconfont icon-zhibo"></text>
+    <text class="iconfont icon-zhuanjiguangpan" ></text>
+    <text class="iconfont icon-maikefeng" ></text>
+    <text class="iconfont icon-youxi"></text>
+  </view>
+</text>

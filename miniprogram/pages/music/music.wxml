@@ -8,6 +8,18 @@ interval="3000" duration="1000" class="swiper">
 </block>
 </swiper>
 
+<text class="control">
+    <text class="iconfont icon-rili"></text>
+    <text class="iconfont icon-FM_weixuanze"></text>
+    <text class="iconfont icon-gedan"></text>
+    <text class="iconfont icon-PCbofangye_paihangbang"></text>
+    <text class="iconfont icon-zhibo"></text>
+    <text class="iconfont icon-zhuanjiguangpan"></text>
+    <text class="iconfont icon-maikefeng" ></text>
+    <text class="iconfont icon-youxi"></text>
+</text>
+
+
 <text class="title">推荐歌单</text>
 <view class="playlist-container">
   <block wx:for="{{playlist}}" wx:key="_id">

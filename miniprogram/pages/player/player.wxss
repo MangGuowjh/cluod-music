@@ -44,6 +44,10 @@
   background: url('https://mangguo-music.oss-cn-shanghai.aliyuncs.com/cloud/needle.png') no-repeat center/contain;
   transform: rotate(-15deg);
   transform-origin: 24rpx 10rpx;
+  transition: 0.8s ease;
+}
+.playing.player-disc::after{
+  transform: rotate(0deg);
 }
 .player-img{
   width: 368rpx;
@@ -54,6 +58,20 @@
   left: 50%;
   margin-top: -184rpx;
   margin-left: -184rpx;
+}
+.zhuan{
+  animation: disc 12s linear infinite;
+}
+.ting{
+  animation-play-state: paused;
+}
+@keyframes disc{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
 }
 .control{
 position: absolute;
@@ -72,4 +90,32 @@ align-items: center;
 .icon-bofang, .icon-zanting{
   font-size: 120rpx;
   margin: 0 50rpx;
+}
+.bar{
+  height: 100rpx;
+  width: 100%;
+  position: relative;
+  top: 70%;
+  display: flex;
+}
+
+.currentTime{
+  position: absolute;
+  top: 16rpx;
+  left: 35rpx;
+  color: #474747;
+}
+
+.totalTime{
+  position: absolute;
+  top: 14rpx;
+  right: 30rpx;
+  color: #474747;
+}
+
+.progress-bar{
+  position: absolute;
+  left: 50%;
+  margin-left: -225rpx;
+  width: 450rpx;
 }
