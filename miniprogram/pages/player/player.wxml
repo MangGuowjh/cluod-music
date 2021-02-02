@@ -3,17 +3,19 @@
 </view>
 <view class="player-mask"></view>
 
+<view class="singer">
+    <view>{{name}}</view>'
+    <view>{{singer}}</view>
+</view>
+
 <view class="player-info">
 
   <view class="player-disc {{isPlaying?'playing':''}}">
     <image class="player-img zhuan {{isPlaying?'':'ting'}}" src="{{picUrl}}"></image>
   </view>
 
-  <view class="bar">
-    <text class="currentTime">{{ currentTime }}</text>
-    <slider max="{{ progressBarMax }}" min="0" value="{{ progressBarValue }}" bindchanging="seeking" bindchange="seekTime" class="progress-bar"
-      block-color="#d43c43" backgroundColor="#000000" activeColor="#d43c43" block-size="12"></slider>
-    <text class="totalTime">{{ totalTime }}</text>
+  <view class="progress-bar">
+    <d-progress-bar bind:musicEnd="onNext" />
   </view>
   
   <view class="control">

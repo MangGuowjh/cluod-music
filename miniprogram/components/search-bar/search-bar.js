@@ -1,9 +1,11 @@
-// components/card/card.js
+// components/search-bar/search-bar.js
+
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
+
   },
 
   /**
@@ -12,11 +14,12 @@ Component({
   data: {
 
   },
-
   /**
    * 组件的方法列表
    */
   methods: {
+   
+    
+    }  
+   })
 
-  }
-})

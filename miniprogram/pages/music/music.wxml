@@ -1,4 +1,8 @@
 <!--pages/music/music.wxml-->
+<view class="search-bar">
+    <d-search-bar />
+  </view>
+
 <swiper indicator-dots="true" indicator-active-color="#d43c43" autoplay="true" 
 interval="3000" duration="1000" class="swiper">
 <block wx:for="{{imgUrls}}" wx:key="index">
@@ -8,21 +12,23 @@ interval="3000" duration="1000" class="swiper">
 </block>
 </swiper>
 
-<text class="control">
-    <text class="iconfont icon-rili"></text>
-    <text class="iconfont icon-FM_weixuanze"></text>
-    <text class="iconfont icon-gedan"></text>
-    <text class="iconfont icon-PCbofangye_paihangbang"></text>
-    <text class="iconfont icon-zhibo"></text>
-    <text class="iconfont icon-zhuanjiguangpan"></text>
-    <text class="iconfont icon-maikefeng" ></text>
-    <text class="iconfont icon-youxi"></text>
-</text>
+<view class="scroll_box"> 
+    <scroll-view scroll-x>
+      <view class="iconfont icon-rili"></view>
+      <view class="iconfont icon-FM_weixuanze"></view>
+      <view class="iconfont icon-gedan"></view>
+      <view class="iconfont icon-PCbofangye_paihangbang"></view>
+      <view class="iconfont icon-zhibo"></view>
+      <view class="iconfont icon-zhuanjiguangpan"></view>
+      <view class="iconfont icon-maikefeng" ></view>
+      <view class="iconfont icon-youxi"></view>
+    </scroll-view>
+</view>    
 
 
-<text class="title">推荐歌单</text>
-<view class="playlist-container">
-  <block wx:for="{{playlist}}" wx:key="_id">
-    <d-playlist playlist="{{item}}"></d-playlist>
-  </block>
-</view>
+      <view class="title">推荐歌单</view>
+        <view class="playlist-container">
+        <block wx:for="{{playlist}}" wx:key="_id">
+          <d-playlist playlist="{{item}}"></d-playlist>
+        </block>
+      </view>

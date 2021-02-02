@@ -7,7 +7,9 @@
     "pages/player/player",
     "pages/podcast/podcast",
     "pages/sing/sing",
-    "pages/cloud-village/cloud-village"
+    "pages/cloud-village/cloud-village",
+    "pages/moremusic/moremusic",
+    "pages/index/index"
   ],
   "requiredBackgroundModes": [
     "audio"

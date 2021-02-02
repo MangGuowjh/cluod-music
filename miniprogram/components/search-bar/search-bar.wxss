@@ -1,0 +1,67 @@
+/* components/search-bar/search-bar.wxss */
+.search-bar {
+  position: relative;
+  padding: 16rpx 20rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  box-sizing: border-box;
+  background-color: #efeff4;
+  border-top: 1rpx solid #d7d6dc;
+  border-bottom: 1rpx solid #d7d6dc;
+}
+.icon-search_in-box {
+  position: absolute;
+  left: 12rpx;
+  top: 5rpx;
+}
+.search-bar_form {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+  flex: auto;
+  border-radius: 50rpx;
+  background: #fff;
+  border: 1rpx solid #e6e6ea;
+}
+.search-bar_box {
+  position: relative;
+  padding-left: 60rpx;
+  padding-right: 60rpx;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.search-bar_input {
+  height: 56rpx;
+  line-height: 56rpx;
+  font-size: 28rpx;
+}
+
+.icon-clear {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 14rpx 16rpx;
+  font-size: 0;
+}
+.search-bar_label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  border-radius: 3px;
+  text-align: center;
+  color: #9b9b9b;
+  background: #fff;
+  line-height: 28px;
+}
+.search-bar_cancel-btn {
+  margin-left: 10px;
+  line-height: 28px;
+  color: #DC3C24;
+  white-space: nowrap;
+}

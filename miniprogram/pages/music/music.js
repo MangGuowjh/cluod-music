@@ -37,7 +37,9 @@ Page({
     {
       url:'http://p1.music.126.net/9Ayx-EeCnuLRWKTcIhGB6g==/109951165664742856.jpg?imageView&quality=89'
     }],
-    playlist:[]
+    playlist:[],
+    lists: [],              // 接收搜索的内容
+    wxSearchData: '',       // 输入的值
   },
 
   /**
@@ -116,5 +118,43 @@ Page({
       wx.stopPullDownRefresh()
       wx.hideLoading()
     })
+  },
+
+wxSearchInput: function (value) {
+  var that = this;
+  if (value.detail.value.length > 0) {
+    wx.request({
+      url: '',
+      data: {
+        value: value.detail.value
+      },
+      header: { 'content-type': 'application/x-www-form-urlencoded' },
+      method: 'POST',
+      dataType: json,
+      responseType: text,
+      success: function (res) {
+        if (res.code) {
+          var data = that.data.lists;
+          for (let i = 0; i < res.data.length; i++) {
+              data.push(res.data[i]);
+          }
+          that.setData({
+            wxSearchData: value.detail.value,
+            lists: data
+          })
+        }
+      },
+      fail: function (res) { },
+      complete: function (res) { },
+    })
   }
+},
+  wxSearchConfirm: function (e) {
+
+  },
+  back: function (e) {
+    wx:wx.navigateBack({
+      delta: 1,
+    })
+  },
 })

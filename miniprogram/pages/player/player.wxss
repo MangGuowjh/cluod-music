@@ -89,33 +89,12 @@ align-items: center;
 }
 .icon-bofang, .icon-zanting{
   font-size: 120rpx;
-  margin: 0 50rpx;
+  margin: 0 60rpx;
 }
-.bar{
-  height: 100rpx;
-  width: 100%;
-  position: relative;
-  top: 70%;
-  display: flex;
-}
-
-.currentTime{
-  position: absolute;
-  top: 16rpx;
-  left: 35rpx;
-  color: #474747;
-}
-
-.totalTime{
-  position: absolute;
-  top: 14rpx;
-  right: 30rpx;
-  color: #474747;
-}
-
 .progress-bar{
+  width: 90%;
   position: absolute;
   left: 50%;
-  margin-left: -225rpx;
-  width: 450rpx;
+  transform: translateX(-50%);
+  bottom: 24%;
 }
