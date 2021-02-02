@@ -10,9 +10,11 @@
 
 <view class="player-info">
 
-  <view class="player-disc {{isPlaying?'playing':''}}">
+  <view class="player-disc {{isPlaying?'playing':''}}" hidden="{{isLyricShow}}" bind:tap="onLyricShow">
     <image class="player-img zhuan {{isPlaying?'':'ting'}}" src="{{picUrl}}"></image>
   </view>
+
+  <d-lyric isLyricShow="{{isLyricShow}}" lyric="{{lyric}}" bind:tap="onLyricShow"></d-lyric>
 
   <view class="progress-bar">
     <d-progress-bar bind:musicEnd="onNext" />

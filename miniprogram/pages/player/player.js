@@ -9,7 +9,11 @@ Page({
    */
   data: {
     picUrl: '',
-    isPlaying: false
+    isPlaying: false,
+    name: '',
+    singer: '',
+    isLyricShow: false,
+    lyric:'传给歌词组件的数据',
   },
 
   /**
@@ -58,6 +62,24 @@ Page({
         isPlaying : true
       })
       wx.hideLoading()
+      wx.cloud.callFunction({
+        name: 'music',
+        data: {
+          musicId,
+          $url: 'lyric',
+        }
+      }).then((res)=>{
+        console.log(res)
+
+        let lyric = '暂无歌词'
+        const  lrc = res.result.lrc
+        if(lrc) {
+          lyric = lrc.lyric
+        }
+        this.setData({
+          lyric
+        })
+      })
     })
   },
   togglePlaying(){
@@ -70,6 +92,11 @@ Page({
       isPlaying: !this.data.isPlaying
     })
 },
+  onLyricShow(){
+    this.setData({
+      isLyricShow: !this.data.isLyricShow
+    })
+  },
   onPrev(){
     playingIndex--
     if( playingIndex < 0){
