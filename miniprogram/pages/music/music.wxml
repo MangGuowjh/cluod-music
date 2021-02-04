@@ -1,7 +1,7 @@
-<!--pages/music/music.wxml-->
+<text class="iconfont icon-gengduo"></text>
 <view class="search-bar">
-    <d-search-bar />
-  </view>
+  <d-search-bar />
+</view>
 
 <swiper indicator-dots="true" indicator-active-color="#d43c43" autoplay="true" 
 interval="3000" duration="1000" class="swiper">

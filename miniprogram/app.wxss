@@ -1,6 +1,5 @@
 /**app.wxss**/
 @import "iconfont.wxss" ;
-@import "iconfont-music.wxss" ;
 .container {
   display: flex;
   flex-direction: column;
@@ -155,4 +154,16 @@ page {
   font-size: 24rpx;
   line-height: 36rpx;
   word-break: break-all;
+}
+/*app.wxss*/
+.custom-navbar{
+  width: 100%;
+  background-color:rgb(230, 225, 225);
+}
+.palce-holder-nav{
+  width: 70%;
+}
+.title>view{
+  width: fit-content;
+  color:black;
 }

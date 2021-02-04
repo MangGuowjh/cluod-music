@@ -1,0 +1,6 @@
+<!--miniprogram/pages/search/search.wxml-->
+<view class="container">
+  <view class="search-bar">
+    <d-search-bar />
+  </view>
+</view>

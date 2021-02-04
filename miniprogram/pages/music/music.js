@@ -1,12 +1,14 @@
 // pages/music/music.js
 const MAX_LIMIT=15
 const db=wx.cloud.database()
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    navHeight: app.globalData.navHeight,
     imgUrls:[{
       url:'http://p1.music.126.net/pOXTFta-mhTpZOGhBBWvhQ==/109951165664682857.jpg?imageView&quality=89'
     },
@@ -40,6 +42,7 @@ Page({
     playlist:[],
     lists: [],              // 接收搜索的内容
     wxSearchData: '',       // 输入的值
+
   },
 
   /**
@@ -47,6 +50,14 @@ Page({
    */
   onLoad: function (options) {
     this._getPlayList()
+  },
+  getUserInfo: function (e) {
+      console.log(e)
+      app.globalData.userInfo = e.detail.userInfo
+      this.setData({
+          userInfo: e.detail.userInfo,
+          hasUserInfo: true
+      })
   },
 
   /**

@@ -106,6 +106,9 @@ Component({
             ['showTime.currentTime'] : `${currentTimeFmt.min}:${currentTimeFmt.sec}`
           })
           currentSec = sec
+          this.triggerEvent('timeUpdate', {
+            currentTime
+          })
          }
         }
       })

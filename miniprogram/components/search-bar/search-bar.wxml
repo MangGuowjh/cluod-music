@@ -1,12 +1,9 @@
-<view class="search-bar">
+<view class="search-bar" bind:tap="goToSearch">
     <view class="search-bar_form">
         <view class="search-bar_box">
             <icon class="icon-search_in-box" type="search" size="26"></icon>
-            <input type="text" class="search-bar_input" placeholder="请输入查询内容" />
+            <input type="text" class="search-bar_input" />
         </view>
     </view>
-    <view class="search-bar_cancel-btn" bindtap="SearchConfirm">
-         <text wx:if="{{SearchData.value.length>0}}" data-key='search'>搜索</text>
-         <text wx:else data-key='back'>返回</text>
-    </view>
 </view>
+

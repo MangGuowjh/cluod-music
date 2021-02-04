@@ -3,10 +3,36 @@
 style='background: url({{listInfo.coverImgUrl}}) no-repeat  top/cover'>
 </view>
 <view class='detail-mask'></view>
+
+<view class="operation">
+  <view>
+    <image src="../../images/tab/collect.png" style="width:60rpx;height:60rpx"></image>
+    <text>收藏</text>
+  </view>
+  <text class="cut">|</text>
+  <view>
+    <image src="../../images/tab/comment.png" style="width:60rpx;height:60rpx"></image>
+    <text>评论</text>
+  </view>
+  <text class="cut">|</text>
+  <view>
+    <image src="../../images/tab/share.png" style="width:60rpx;height:60rpx"></image>
+    <text>分享</text>
+  </view>
+</view>
+
+<view class="control">
+  <view class="iconfont icon-bofang">
+    播放全部（{{}}）
+  </view>
+  <view class="iconfont icon-xiazai"></view>
+  <view class="iconfont icon-tubiaozhizuomoban"></view>
+</view>
 <view class='detail-info'>
   <image src="{{listInfo.coverImgUrl}}" class='detail-img'></image>
     <view class='detail-name'>{{listInfo.name}}</view>
   </view>
+  
 
 <d-musiclist musiclist="{{musiclist}}" />
 

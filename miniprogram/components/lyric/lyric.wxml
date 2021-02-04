@@ -3,11 +3,11 @@
   {{lyric}}
 </view>-->
 
-<scroll-view hidden="{{!isLyricShow}}" class="lyric-scroll" scroll-y>
+<scroll-view hidden="{{!isLyricShow}}" class="lyric-scroll" scroll-y scroll-top="{{scrollTop}}" scroll-with-animation="true">
   <view class="lyric-panel">
-    <block wx:for="{{lyrics}}" wx:key="index">
-      <view class="lyric">
-        {{item}}
+    <block wx:for="{{lyrics}}" wx:key="item">
+      <view class="lyric {{index==nowLyricIndex?'hightlight-lyric': ''}}">
+        {{item.lrc}}
       </view>
     </block>
   </view>

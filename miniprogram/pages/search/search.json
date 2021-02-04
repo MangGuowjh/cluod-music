@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+  "d-search-bar":"/components/search-bar/search-bar"
+  }
+}

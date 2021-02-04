@@ -9,17 +9,15 @@
     "pages/sing/sing",
     "pages/cloud-village/cloud-village",
     "pages/moremusic/moremusic",
-    "pages/index/index"
+    "pages/index/index",
+    "pages/search/search"
   ],
   "requiredBackgroundModes": [
     "audio"
   ],
   "window": {
-    "backgroundColor": "#F6F6F6",
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#d43c33",
-    "navigationBarTitleText": "芒果音乐",
-    "navigationBarTextStyle": "white"
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
   },
   "tabBar": {
     "color": "#474747",

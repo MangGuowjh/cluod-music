@@ -97,6 +97,9 @@ Page({
       isLyricShow: !this.data.isLyricShow
     })
   },
+  timeUpdate(event){
+    this.selectComponent('.lyric').update(event.detail.currentTime)
+  },
   onPrev(){
     playingIndex--
     if( playingIndex < 0){

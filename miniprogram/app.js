@@ -1,6 +1,11 @@
 //app.js
 App({
   onLaunch: function (options) {
+    wx.getSystemInfo({
+      success: res=> {
+          this.globalData.navHeight = res.statusBarHeight;
+      },
+  })
     console.log('onLaunch 执行')
     console.log(options)
     if (!wx.cloud) {
@@ -17,8 +22,13 @@ App({
     }
     this.globalData = {}
   },
+  
   onShow(options){
     console.log('onShow 执行')
     console.log(options)
+},
+globalData: {
+  userInfo: null,
+  navHeight: 0,
   }
 })
