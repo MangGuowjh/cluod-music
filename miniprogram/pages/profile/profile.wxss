@@ -1,1 +1,93 @@
 /* pages/profile/profile.wxss */
+.avatar{
+  position: absolute;
+  height: 200rpx;
+  width: 200rpx;
+  top: 150rpx;
+  left: 80rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.car{
+  background-color: #d34c33;
+  height: 500rpx;
+  width: 100%;
+}
+.operation{
+  display: flex;
+  position: absolute;
+  top: 400rpx;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #ffffff;
+  padding: 20rpx;
+  align-items: center;
+  height: 140rpx;
+  width: 80%;
+}
+.operation view{
+  font-size: 38rpx;
+  align-items: center;
+  margin: 0 20rpx 0 20rpx;
+  width: 150rpx;
+}
+.cut{
+  color: #474747;
+}
+.a-control{
+  font-size: 38rpx;
+  position: absolute;
+  top: 610rpx;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #ffffff;
+  padding: 20rpx;
+  width: 80%;
+}
+.b-control{
+  font-size: 38rpx;
+  position: absolute;
+  top: 710rpx;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #ffffff;
+  padding: 20rpx;
+  width: 80%;
+}
+.c-control{
+  font-size: 38rpx;
+  position: absolute;
+  top: 810rpx;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #ffffff;
+  padding: 20rpx;
+  width: 80%;
+}
+.pf-control{
+  font-size: 38rpx;
+  position: absolute;
+  top: 910rpx;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #ffffff;
+  padding: 20rpx;
+  width: 80%;
+}
+.pfa-control{
+  font-size: 38rpx;
+  position: absolute;
+  top: 1010rpx;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #ffffff;
+  padding: 20rpx;
+  width: 80%;
+}
+.iconfont{
+  height: 34rpx;
+  width: 34rpx;
+  color: #474747;
+  position: absolute;
+  right: 5%;
+}

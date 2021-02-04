@@ -1,0 +1,47 @@
+/* miniprogram/pages/login/login.wxss */
+/* pages/login/login.wxss */
+page{
+  height: 100%;    /* 使用page的height可以使页面占全屏 */
+  background-color: #d34c33;
+ }
+.login-container{
+  padding: 0 10%;
+  height: 100%;
+}
+.a-login-box{
+  margin-top: 1000rpx;
+  padding: 5% 5%;
+  background-color: white;
+  border-radius: 50rpx;
+  box-shadow: 0 4px 4px #888888;
+}
+.b-login-box{
+  margin-top: 20rpx;
+  padding: 5% 5%;
+  background-color: white;
+  border-radius: 50rpx;
+  box-shadow: 0 4px 4px #888888;
+}
+.three-line{
+  margin: 8% 0;
+  text-align: center;
+  font-size: 18px;
+  color: gray;
+}
+.iconfont{
+  display: inline-block;
+}
+.icon-yinle1{
+ color: #aa1906;
+ font-size: 200rpx;
+ position: absolute;
+ top: 500rpx;
+ left: 50%;
+ transform: translate(-50%);
+}
+.icon-wechat, .icon-qq, .icon-weibo, .icon-geren13{
+  color: gray;
+  font-size: 54rpx;
+  margin: 0 40rpx 0 40rpx;
+}
+ 

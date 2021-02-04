@@ -1,2 +1,58 @@
 <!--pages/profile/profile.wxml-->
+  <view class="car">
+    <view class='avatar'>
+      <open-data type='userAvatarUrl'></open-data>
+    </view>
+
+    <text class="information"></text>
+
+    <view class="operation">
+      <view>
+        <view>0</view>
+        <text>本地下载</text>
+      </view>
+      <text class="cut">|</text>
+      <view>
+        <view>0</view>
+        <text>收藏歌单</text>
+      </view>
+      <text class="cut">|</text>
+      <view>
+        <view>0</view>
+        <text>喜欢</text>
+      </view>
+    </view>
+
+  </view>
+  <view class="a-control">
+    <view>
+      <text>我创建的歌单</text>
+      <text class="iconfont icon-zhankai"></text>
+    </view>
+  </view>
+  <view class="b-control">
+    <view>
+      <text>最近播放</text>
+      <text class="iconfont icon-zhankai"></text>
+    </view>
+  </view>
+  <view class="c-control">
+    <view>
+      <text>我的好友</text>
+      <text class="iconfont icon-zhankai"></text>
+    </view>
+  </view>
+
+  <view class="pf-control">
+    <view>
+      <text>绑定手机号码</text>
+      <text class="iconfont icon-zhankai"></text>
+    </view>
+  </view>
+  <view class="pfa-control">
+    <view>
+      <text>实名认证</text>
+      <text class="iconfont icon-zhankai"></text>
+    </view>
+  </view>
 
