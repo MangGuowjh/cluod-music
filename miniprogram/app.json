@@ -54,6 +54,9 @@
       }
     ]
   },
+  "usingComponents": {
+    "navigation": "/components/navigation/navigation"
+  },
   "sitemapLocation": "sitemap.json",
   "style": "v2"
 }

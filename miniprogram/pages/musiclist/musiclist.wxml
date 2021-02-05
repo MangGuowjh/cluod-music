@@ -1,4 +1,5 @@
 <!--pages/musiclist/musiclist.wxml-->
+<navigation showIcon='{{true}}' ></navigation>
 <view wx:if='{{listInfo.coverImgUrl}}' class='detail-container' 
 style='background: url({{listInfo.coverImgUrl}}) no-repeat  top/cover'>
 </view>

@@ -1,0 +1,32 @@
+/* components/navigation/navigation.wxss */
+.navigation.status-bar {
+  width: 100%;
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+}
+.navigation.status-bar .goBack{
+  position: absolute;
+  top: 90rpx;
+  font-size: 50rpx;
+}
+.navigation.status-bar .goBack image{
+  width: 56rpx;
+  height: 56rpx;
+  padding: 12rpx 40rpx 0 30rpx;
+}
+.navigation.status-bar .tabar{
+  display: flex;
+  justify-content: center;
+  background: #fff;
+}
+.navigation.status-bar .tabar2{
+  background: transparent !important;
+}
+.navigation.status-bar .tabar2 text{
+  color: #fff !important;
+  font-weight: lighter !important;
+}
+.navigation.status-bar .tabar text{
+  height: 88rpx;
+}

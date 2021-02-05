@@ -1,0 +1,10 @@
+<!--components/navigation/navigation.wxml-->
+<view style="padding-top:{{contentOffset ? statusBarHeight + 44 : 0}}px;">
+  <view class="navigation status-bar">
+    <view class="goBack" bind:tap="goBack" style="padding-top:{{statusBarHeight}}px;" hidden="{{!showIcon}}">
+      <image src="back.png"></image>
+    </view>
+    <view class="tabar {{isTransparent ? 'tabar2' : ''}}" style="padding-top:{{statusBarHeight}}px; background-color:{{backgroundColor}}; {{nav.linearGradient(linearGradient, direction, colors)}}"> 
+    </view>
+  </view>
+</view>
