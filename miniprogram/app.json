@@ -9,7 +9,7 @@
     "pages/sing/sing",
     "pages/cloud-village/cloud-village",
     "pages/search/search",
-    "pages/login/login"
+    "pages/publish/publish"
   ],
   "requiredBackgroundModes": [
     "audio"

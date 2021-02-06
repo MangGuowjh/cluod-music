@@ -1,1 +1,38 @@
 /* pages/podcast/podcast.wxss */
+.information{
+  font-size: 32rpx;
+  position: absolute;
+  top: 100rpx;
+  left: 50%;
+  transform: translate(-50%);
+}
+.header{
+position: absolute;
+top: 140rpx;
+height:100rpx;
+width: 100%;
+}
+.header .left{
+  width: 68rpx;
+  height: 68rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .right{
+  position: absolute;
+  margin-left: 100rpx;
+  margin-right:20rpx;
+  top: 15rpx;
+}
+.container{
+  margin-top: 10rp;
+  box-sizing: border-box;
+  height: 50rpx;
+}
+.icon-fabu{
+  position: absolute;
+  top: 15rpx;
+  left: 30rpx;
+  font-size: 60rpx;
+}

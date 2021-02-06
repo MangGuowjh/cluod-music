@@ -1,4 +1,4 @@
-// miniprogram/pages/login/login.js
+// miniprogram/pages/publish/publish.js
 Page({
 
   /**
@@ -11,9 +11,6 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  login:function(){
-    wx.navigateTo({ url: '../profile/profile' });
-},
   onLoad: function (options) {
 
   },

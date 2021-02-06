@@ -60,8 +60,8 @@
           "query": ""
         },
         {
-          "name": "test",
-          "pathName": "pages/test/test",
+          "name": "播客",
+          "pathName": "pages/podcast/podcast",
           "query": "",
           "scene": null
         },

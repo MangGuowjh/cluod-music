@@ -1,14 +1,18 @@
 <!--pages/podcast/podcast.wxml-->
-<text>pages/podcast/podcast.wxml</text>
-<text class="player-info">
-<view class="control">
-    <text class="iconfont icon-rili" ></text>
-    <text class="iconfont icon-FM_weixuanze" ></text>
-    <text class="iconfont icon-gedan" ></text>
-    <text class="iconfont icon-PCbofangye_paihangbang"></text>
-    <text class="iconfont icon-zhibo"></text>
-    <text class="iconfont icon-zhuanjiguangpan" ></text>
-    <text class="iconfont icon-maikefeng" ></text>
-    <text class="iconfont icon-youxi"></text>
+<navigation showIcon='{{fasle}}' ></navigation>
+<title class="information">播客</title>
+
+<view class="header">
+  <view class="left" bind:tap="onPublish">
+    <i class="iconfont icon-fabu"></i>
   </view>
-</text>
+  <view class="right">
+    <d-search-modal bind:search="onSearch" />
+  </view>
+</view>
+
+<scroll-view class="container" scroll-y>
+  <d-login modalShow="{{modalShow}}" bind:loginsuccess="onLoginSuccess" 
+  bind:loginfail="onLoginFail">
+</d-login>
+</scroll-view>
