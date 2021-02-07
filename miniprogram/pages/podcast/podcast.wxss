@@ -1,38 +1,31 @@
-/* pages/podcast/podcast.wxss */
 .information{
-  font-size: 32rpx;
   position: absolute;
   top: 100rpx;
   left: 50%;
   transform: translate(-50%);
+  font-size: 32rpx;
 }
 .header{
-position: absolute;
-top: 140rpx;
-height:100rpx;
-width: 100%;
-}
-.header .left{
-  width: 68rpx;
-  height: 68rpx;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.header .right{
   position: absolute;
-  margin-left: 100rpx;
-  margin-right:20rpx;
-  top: 15rpx;
+  top: 140rpx;
+  height:100rpx;
+  width: 100%;
+  background-color:	#ffff;
 }
-.container{
-  margin-top: 10rp;
-  box-sizing: border-box;
-  height: 50rpx;
+.left{
+  display: flex;
+  width: 40rpx;
+  height: 65rpx;
 }
 .icon-fabu{
   position: absolute;
   top: 15rpx;
   left: 30rpx;
   font-size: 60rpx;
+}
+.right{
+  position: absolute;
+  margin-left: 100rpx;
+  margin-right:20rpx;
+  top: 15rpx;
 }
