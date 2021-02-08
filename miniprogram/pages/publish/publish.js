@@ -1,7 +1,8 @@
 // miniprogram/pages/publish/publish.js
 const MAX_WORDS_NUM = 140
-// 最大上传图片数量
 const MAX_IMG_NUM = 9
+//引入云数据库
+const db = wx.cloud.database()
 // 输入的文字内容
 let content = ''
 // 用户信息
@@ -90,6 +91,67 @@ Page({
         selectPhoto: true,
       })
     }
+  },
+  send(){
+    if(content.trim() === '') {
+      wx.showModal({
+        title: '请输入内容',
+        content: '',
+      })
+      return
+    }
+    wx.showLoading({
+      title: '发布中',
+      mask: true,
+    })
+    let promiseArr=[]
+    let fileIds = []
+    for (let i=0,len = this.data.images.length; i<len;i++) {
+      let p =new Promise((resolve, reject) =>{
+        let item = ths.data.images[i]
+        let suffix = /\.\w+$/.exec(item)[0]
+        console.log(suffix)
+        wx.cloud.uploadFile({
+          cloudPath: 'blog/' + Date.now() + '-' + Math.random() * 1000000 + suffix,
+          filePath: item,
+          success: (res) => {
+            console.log(res.fileID)
+            fileIds = fileIds.concat(res.fileID)
+            resolve()
+          },
+          fail: (err) =>{
+            console.error(err)
+            reject()
+          }
+        })
+      })
+      promiseArr.push(p)
+    }
+    Promise.all(promiseArr).then((res)=>{
+      db.collection('blog').add({
+        data: {
+          ...userInfo,
+          content,
+          imgs:fileIds,
+          createTime: db.serverDate(),
+        }
+      }).then((res) => {
+        console.log(res)
+        wx.hideLoading()
+        wx.showToast({
+          title: '发布成功',
+        })
+        wx.navigateBack()
+          const pages = getCurrentPages()
+          const prevPage = pages[pages.length - 2]
+          prevPage.onPullDownRefresh()
+      })
+    }).catch((err) =>{
+      wx.hideLoading()
+      wx.showToast({
+        title: '发布失败',
+      })
+    })
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

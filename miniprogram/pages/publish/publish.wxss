@@ -9,52 +9,49 @@
   padding: 20rpx;
 }
 
-.content {
+.container .content {
   position: absolute;
-  top: 180rpx;
+  top: 160rpx;
   width: 100%;
   height: 360rpx;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  background-color: #fff;
-  color: #000000;
+  background-color: #f6f6f6;
+  color: #333;
   padding: 10rpx;
 }
 
-.image-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.container .image-list {
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-top: 520rpx;
+  position: absolute;
+  left: 0;
 }
 
-.image-wrap {
-  position: relative;
-  left: -110%;
+.container .image-list .image-wrap {
   width: 220rpx;
   height: 220rpx;
   margin-right: 10rpx;
   margin-bottom: 10rpx;
+  position: relative;
   overflow: hidden;
   text-align: center;
 }
 
-.image {
+.container .image-list .image-wrap .image {
   width: 100%;
   height: 100%;
 }
 
-.icon-shanchu_ {
+.container .image-list .image-wrap .icon-shanchu_ {
   position: absolute;
   top: 0;
   right: 0;
   width: 40rpx;
   height: 40rpx;
-  background-color: #000;
+  background-color: #000000;
   opacity: 0.4;
-  color: #fff;
+  color: #ffff;
   text-align: center;
   line-height: 40rpx;
   font-size: 38rpx;
@@ -62,39 +59,31 @@
 }
 
 .selectphoto {
-  border: 2rpx dashed #ccc;
+  border: 2rpx dashed #cccccc;
   position: relative;
   background-color: #f8f8f8;
 }
 
-.icon-add {
+.selectphoto .icon-add {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  color: #ccc;
+  color: #cccccc;
   font-size: 90rpx;
 }
 
 .footer {
   position: fixed;
   width: 100%;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   padding: 40rpx;
   background: #f1f1f1;
 }
 
-.words-num {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
+.footer .words-num {
   flex: 1;
   text-align: right;
   color: #474747;
@@ -102,8 +91,8 @@
   padding-right: 40rpx;
 }
 
-.send-btn {
-  background: #d43c33;
-  color: #fff;
+.footer .send-btn {
+  background-color: #d34c33;
+  color: #ffff;
   font-size: 28rpx;
 }

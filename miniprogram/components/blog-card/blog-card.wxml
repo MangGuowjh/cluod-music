@@ -1,0 +1,27 @@
+<!--components/blog-card/blog-card.wxml-->
+<view class="blog">
+  <view class="blog-header">
+    <image class="blog-avatar" src="{{blog.avatarUrl}}" />
+    <view class="blog-box">
+      <view class="blog-nickName">{{blog.nickName}}</view>
+      <view class="blog-time">{{_createrTime}}</view>
+    </view>
+  </view>
+  
+  <view class="blog-content">
+    <text>{{blog.content}}</text>
+  </view>
+
+  <view class="blog-img">
+    <block wx:for="{{blog.imgs}}" wx:key="index">
+      <image
+      class="img"
+      src="{{item}}"
+      mode="aspectFill"
+      catch:tap="onPreviewImage"
+      data-imgsrc="{{item}}"
+      data-imgs="{{blog.imgs}}"
+      />
+    </block>
+  </view>
+</view>

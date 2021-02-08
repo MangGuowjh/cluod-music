@@ -1,6 +1,8 @@
 {
   "usingComponents": {
     "d-search-modal": "/components/search-modal/search-modal",
-    "d-login": "/components/login/login"
-  }
+    "d-login": "/components/login/login",
+    "d-blog-card": "/components/blog-card/blog-card"
+  },
+  "enablePullDownRefresh": true
 }

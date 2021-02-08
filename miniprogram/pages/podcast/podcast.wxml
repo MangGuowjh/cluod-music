@@ -3,16 +3,22 @@
 <title class="information">播客</title>
 
 <view class="header">
-  <view class="left" bind:tap="onPublish">
+  <view class="publish-container" bind:tap="onPublish">
     <i class="iconfont icon-fabu"></i>
   </view>
-  <view class="right">
-    <d-search-modal bind:search="onSearch" />
+  <view class="search-container">
+    <d-search-modal/>
   </view>
 </view>
 
-<scroll-view class="container" scroll-y>
+<view class="container">
+  <block wx:for="{{blogList}}" wx:key="_id">
+    <view class="blog-panel">
+      <d-blog-card blog="{{item}}" data-blogid="{{item._id}}" bind:tap="goComment"/>
+    </view>
+  </block>
+</view>
+
   <d-login modalShow="{{modalShow}}" bind:loginsuccess="onLoginSuccess" 
-  bind:loginfail="onLoginFail">
-</d-login>
-</scroll-view>
+  bind:loginfail="onLoginFail"/>
+
